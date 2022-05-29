@@ -1,1 +1,84 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  bottom: 0px;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #FBFBFB;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border-style: none;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  outline: none;
+}
+
+button {
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  margin: 1.3rem 0 1.3rem .3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */

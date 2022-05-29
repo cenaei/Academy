@@ -1,6 +1,5 @@
-@import "mixin";
+@import "fonts";
 @import "colors";
-@import "font";
 
 * {
   margin: 0;
@@ -18,11 +17,10 @@ body {
   overflow: hidden;
   top: 0px;
   bottom: 0px;
-  margin: 0px;
   width: 100vw;
   height: 100vh;
   font-family: "Roboto", sans-serif;
-  background-color: #F7F7F7;
+  background-color: $background;
 }
 
 ol,
