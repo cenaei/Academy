@@ -11,3 +11,11 @@
 body {
   @include flexBetween(row);
 }
+
+.left {
+  figure {
+    img {
+      width: 5rem;
+    }
+  }
+}
