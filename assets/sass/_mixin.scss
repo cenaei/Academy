@@ -1,0 +1,83 @@
+@mixin wrap {
+  flex-wrap: wrap;
+}
+
+@mixin flex($flex) {
+  display: flex;
+  flex-direction: $flex;
+}
+
+@mixin center {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexStart($flex) {
+  display: flex;
+  flex-direction: $flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin flexStartRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flexStartCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin flexCenter($flex) {
+  display: flex;
+  flex-direction: $flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexAround($flex) {
+  display: flex;
+  flex-direction: $flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flexBetween($flex) {
+  display: flex;
+  flex-direction: $flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexEvenly($flex) {
+  display: flex;
+  flex-direction: $flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin d-flex($f, $j, $a) {
+  display: flex;
+  flex-direction: $f;
+  justify-content: $j;
+  align-items: $a;
+}
+
+@mixin font($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin container($rem) {
+  margin: 0 $rem;
+}
+
+@mixin maxwidth($width) {
+  max-width: $width;
+  margin: 0 auto;
+}
