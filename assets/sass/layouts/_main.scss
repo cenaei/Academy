@@ -1,0 +1,68 @@
+.main {
+  min-height: 100%;
+  min-width: 65vw;
+  padding: 2rem;
+  .nav {
+    @include flexBetween(row);
+    .search {
+      background-color: white;
+      padding: 0.7rem 2rem;
+      border-radius: 1.3rem;
+    }
+  }
+  .newCourses {
+    &__slides {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 0px;
+      img {
+        max-height: 10rem;
+      }
+      &--first {
+        padding-bottom: 2rem;
+        text-align: center;
+        border-radius: 1rem;
+        background-color: $lOrange;
+      }
+      &--second {
+        @extend .newCourses__slides--first;
+        background-color: $lPurple;
+      }
+      &--third {
+        @extend .newCourses__slides--first;
+        background-color: $lBlue;
+      }
+    }
+    // &__slides {}
+  }
+
+  .myCourses {
+    table {
+      min-width: 100%;
+    }
+    table,
+    td,
+    th {
+      background-color: aliceblue;
+      padding: 1rem;
+      border-radius: 1.3rem;
+    }
+    td,
+    th {
+      padding: 3px;
+      // width: 30px;
+      height: 4rem;
+    }
+    th {
+      @include font(1rem, 300);
+    }
+    // .even {
+    //   background: #fbf8f0;
+    // }
+    // .odd {
+    //   background: #fefcf9;
+    // }
+  }
+}

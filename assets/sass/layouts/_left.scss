@@ -1,0 +1,67 @@
+.left {
+  max-width: 15vw;
+  min-height: 100%;
+  figure {
+    @include flexStartRow;
+    @include font(2rem, 300);
+    gap: 1rem;
+    margin-bottom: 2rem;
+    img {
+      width: 5rem;
+      border-radius: 1rem;
+    }
+  }
+  
+  .menu {
+    padding-left: .5rem;
+
+    ul {
+      li{
+        @include flexStartRow;
+        // @include font(2rem, 600);
+        // Not Working
+        padding: 1rem 0 1rem 1.5rem;
+        border-radius: 1rem;
+        &:hover {
+          background-color: $secondary;
+        }
+        &:active {
+          background-color: $confirm;
+        }
+        i {
+          @include font(2rem, 600);
+          margin-right: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .premium {
+    @include flexCenter(column);
+    text-align: center;
+    figure {
+      img {
+        width: 20rem;
+      }
+    }
+    &__text {
+      z-index: -1;
+      padding: 7rem 1rem 2rem;
+      margin-top: -12rem;
+      background-color: $secondary;
+      border-radius: 1.3rem;
+      h6 {
+        @include font(1.6rem, 500);
+      }
+      p {
+        @include font(1.4rem, 300);
+      }
+      button {
+        @include font(1.2rem, 400);
+        margin-top: 2rem;
+        // &:hover {background-color: red;}
+        // Not Working
+      }
+    }
+  }
+}

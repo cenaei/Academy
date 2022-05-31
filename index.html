@@ -20,12 +20,24 @@
       </figure>
       <section class="menu">
         <ul>
-          <li><i class="fa-solid fa-archway"></i> Dashboard</li>
-          <li><i class="fa-solid fa-briefcase"></i> Courses</li>
-          <li><i class="fa-solid fa-comment"></i> Chats</li>
-          <li><i class="fa-solid fa-chart-simple"></i> Grades</li>
-          <li><i class="fa-solid fa-calendar-days"></i> Schedule</li>
-          <li><i class="fa-solid fa-gear"></i> Settings</li>
+          <li>
+            <a href="#"><i class="fa-solid fa-archway"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-briefcase"></i> Courses</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-comment"></i> Chats</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-chart-simple"></i> Grades</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-calendar-days"></i> Schedule</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+          </li>
         </ul>
       </section>
       <section class="premium">
@@ -42,32 +54,60 @@
     <main class="main">
       <navbar class="nav">
         <h1>Dashboard</h1>
-        <div class="search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" name="search" id="search" placeholder="Search" />
+        <div class="row">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="search" placeholder="Search" />
+          </div>
           <button>
             <i class="fa-regular fa-bell"></i>
           </button>
-          <button>
+        </div>
+        <!-- <button>
             <i class="fa-solid fa-moon"></i>
             <i class="fa-solid fa-sun"></i>
-          </button>
-        </div>
+          </button> -->
       </navbar>
       <section class="newCourses">
         <h2>New Courses</h2>
-        <div class="newCourses__slides"></div>
+        <div class="newCourses__slides">
+          <div class="newCourses__slides--first">
+            <figure><img src="./assets/img/courses/1.png" alt="course logo" /></figure>
+            <h3>Geography</h3>
+            <p>12 lessons</p>
+          </div>
+          <div class="newCourses__slides--second">
+            <figure><img src="./assets/img/courses/2.png" alt="course logo" /></figure>
+            <h3>Geography</h3>
+            <p>12 lessons</p>
+          </div>
+          <div class="newCourses__slides--third">
+            <figure><img src="./assets/img/courses/3.png" alt="course logo" /></figure>
+            <h3>Geography</h3>
+            <p>12 lessons</p>
+          </div>
+          <div class="newCourses__slides--first">
+            <figure><img src="./assets/img/courses/1.png" alt="course logo" /></figure>
+            <h3>Geography</h3>
+            <p>12 lessons</p>
+          </div>
+          <div class="newCourses__slides--second">
+            <figure><img src="./assets/img/courses/2.png" alt="course logo" /></figure>
+            <h3>Geography</h3>
+            <p>12 lessons</p>
+          </div>
+        </div>
       </section>
       <section class="myCourses">
         <h2>My Courses</h2>
         <table>
           <tbody>
-            <tr>
+            <th>
               <td colspan="2">Course name</td>
               <td>Start</td>
               <td>Rate</td>
               <td>Level</td>
-            </tr>
+            </th>
             <tr>
               <td><i class="fa-brands fa-connectdevelop"></i></td>
               <td>Web Design</td>

@@ -1,0 +1,19 @@
+.aside {
+  max-width: 20vw;
+  min-height: 100%;
+  padding: 2rem;
+  .profile {
+    &__title {
+      
+    }
+    &__detail {
+      img {width: 20rem}
+    }
+    &__name {
+
+    }
+    &__level {
+
+    }
+  }
+}
