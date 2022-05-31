@@ -1,86 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <title>Web Study Dashboard</title>
-</head>
-<body>
-  <header class="left">
-    <figure>
-      <img src="./assets/img/logo/logo.png" alt="Logo">
-      Academy
-    </figure>
-    <section class="menu">
-      <ul>
-        <li>Dashboard</li>
-        <li>Courses</li>
-        <li>Chats</li>
-        <li>Grades</li>
-        <li>Schedule</li>
-        <li>Settings</li>
-      </ul>
-    </section>
-    <section class="premium">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/38a4aeacdd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Web Study Dashboard</title>
+  </head>
+  <body>
+    <header class="left">
       <figure>
-        <img src="./assets/img/navbar-bg-1.png" alt="Banner Photo">
+        <img src="./assets/img/logo/logo.png" alt="Logo" />
+        Academy
       </figure>
-      <div class="premium__text">
-        <h6>Premium Subscription</h6>
-        <p>Buy Premium and get access to new courses</p>
-        <button>More Detailed</button>
-      </div>
-    </section>
-  </header>
-  <main class="main">
-    <navbar class="nav">
-      <h1>Dashboard</h1>
-      <div class="search">
-
-        <input type="text" name="search" id="search">
-        <button>
-
-        </button>
-      </div>
-    </navbar>
-    <section class="newCourses">
-      <h2>New Courses</h2>
-      <div class="newCourses__slides"></div>
-    </section>
-    <section class="myCourses">
-      <h2>My Courses</h2>
-      <table></table>
-    </section>
-  </main>
-  <aside class="aside">
-    <section class="profile">
-      <div class="profile__title">
-        <h2>Profile</h2>
-        <button>
-
-        </button>
-      </div>
-      <div class="profile__detail">
-        <figure class="profile__photo">
-          <img src="./assets/img/avatar/1. Asian Man.png" alt="Profile Photo">
+      <section class="menu">
+        <ul>
+          <li><i class="fa-solid fa-archway"></i> Dashboard</li>
+          <li><i class="fa-solid fa-briefcase"></i> Courses</li>
+          <li><i class="fa-solid fa-comment"></i> Chats</li>
+          <li><i class="fa-solid fa-chart-simple"></i> Grades</li>
+          <li><i class="fa-solid fa-calendar-days"></i> Schedule</li>
+          <li><i class="fa-solid fa-gear"></i> Settings</li>
+        </ul>
+      </section>
+      <section class="premium">
+        <figure>
+          <img src="./assets/img/navbar-bg-1.png" alt="Banner Photo" />
         </figure>
-        <div class="profile__name">
-          <h3>Esther Howard</h3>
-          
+        <div class="premium__text">
+          <h6>Premium Subscription</h6>
+          <p>Buy Premium and get access to new courses</p>
+          <button>More Detailed</button>
         </div>
-        <div class="profile__level">
-          <p>Elementary</p>
+      </section>
+    </header>
+    <main class="main">
+      <navbar class="nav">
+        <h1>Dashboard</h1>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" name="search" id="search" placeholder="Search" />
+          <button>
+            <i class="fa-regular fa-bell"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+          </button>
         </div>
-      </div>
-    </section>
-    <section class="date"></section>
-    <section class="homework">
-      <h2>Homework progress</h2>
-      <div class="homework__slides"></div>
-    </section>
-  </aside>
-</body>
+      </navbar>
+      <section class="newCourses">
+        <h2>New Courses</h2>
+        <div class="newCourses__slides"></div>
+      </section>
+      <section class="myCourses">
+        <h2>My Courses</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td colspan="2">Course name</td>
+              <td>Start</td>
+              <td>Rate</td>
+              <td>Level</td>
+            </tr>
+            <tr>
+              <td><i class="fa-brands fa-connectdevelop"></i></td>
+              <td>Web Design</td>
+              <td>May 12</td>
+              <td>4.8</td>
+              <td>Elementary</td>
+            </tr>
+            <tr>
+              <td><i class="fa-brands fa-free-code-camp"></i></td>
+              <td>Development Basics</td>
+              <td>May 16</td>
+              <td>4.4</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td><i class="fa-brands fa-python"></i></td>
+              <td>Data with Python</td>
+              <td>May 17</td>
+              <td>4.6</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td><i class="fa-brands fa-html5"></i></td>
+              <td>Html Basics</td>
+              <td>May 26</td>
+              <td>4.7</td>
+              <td>Elementary</td>
+            </tr>
+            <tr>
+              <td><i class="fa-brands fa-js-square"></i></td>
+              <td>JavaScript</td>
+              <td>May 30</td>
+              <td>4.9</td>
+              <td>Elementary</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <aside class="aside">
+      <section class="profile">
+        <div class="profile__title">
+          <h2>Profile</h2>
+          <button><i class="fa-solid fa-pen-to-square"></i></button>
+        </div>
+        <div class="profile__detail">
+          <figure class="profile__photo">
+            <img
+              src="./assets/img/avatar/1. Asian Man.png"
+              alt="Profile Photo"
+            />
+          </figure>
+          <div class="profile__name">
+            <h3>Esther Howard</h3>
+          </div>
+          <div class="profile__level">
+            <p>Elementary</p>
+          </div>
+        </div>
+      </section>
+      <section class="date"></section>
+      <section class="homework">
+        <h2>Homework progress</h2>
+        <div class="homework__slides"></div>
+      </section>
+    </aside>
+  </body>
 </html>
