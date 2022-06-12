@@ -11,12 +11,11 @@
     }
   }
   .newCourses {
+    &__slider {
+      width: 100%;
+      overflow: hidden;
+    }
     &__slides {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: 1fr;
-      grid-column-gap: 15px;
-      grid-row-gap: 0px;
       img {
         max-height: 10rem;
       }
@@ -25,44 +24,112 @@
         text-align: center;
         border-radius: 1rem;
         background-color: $lOrange;
+        figure {
+          background-color: $orange;
+          margin: 1.3rem;
+          border-radius: 1rem;
+        }
       }
       &--second {
         @extend .newCourses__slides--first;
         background-color: $lPurple;
+        figure {
+          background-color: $purple;
+          margin: 1.3rem;
+          border-radius: 1rem;
+        }
       }
       &--third {
         @extend .newCourses__slides--first;
         background-color: $lBlue;
+        figure {
+          background-color: $blue;
+          margin: 1.3rem;
+          border-radius: 1rem;
+        }
       }
     }
-    // &__slides {}
   }
 
   .myCourses {
+    padding-top: 1rem;
     table {
-      min-width: 100%;
-    }
-    table,
-    td,
-    th {
-      background-color: aliceblue;
-      padding: 1rem;
+      // overflow-y:auto;
+      padding: 1.5rem;
       border-radius: 1.3rem;
+      min-width: 100%;
+      background-color: $table;
+      border-spacing: 1rem;
+      td,
+      th {
+        // padding: 1rem;
+        // width: 30px;
+        border-radius: 1.3rem;
+      }
+      thead {
+        @include font(1.4rem, 500);
+      }
+      // .even {
+      //   background: #fbf8f0;
+      // }
+      // .odd {
+      //   background: #fefcf9;
+      // }
+      i {
+        text-align: center;
+        width: 2rem;
+        // aspect-ratio: 1/1;
+        padding: 1rem;
+      }
+      tbody {
+        td:first-child {
+          width: 5rem;
+        }
+        .web {
+          color: $courseWeb1;
+          background-color: $courseweb2;
+          // width: 2rem;
+          text-align: center;
+          height: 3rem;
+        }
+        .develop {
+          color: $courseDevelop1;
+          background-color: $courseDevelop2;
+          // width: 2rem;
+          text-align: center;
+          height: 3rem;
+        }
+        .data {
+          color: $courseData1;
+          background-color: $courseData2;
+          // width: 2rem;
+          text-align: center;
+          height: 3rem;
+        }
+        .html {
+          color: $courseHtml1;
+          background-color: $courseHtml2;
+          // width: 2rem;
+          text-align: center;
+          height: 3rem;
+        }
+        .js {
+          color: $courseJs1;
+          background-color: $courseJs2;
+          // width: 2rem;
+          text-align: center;
+          height: 3rem;
+        }
+        span {
+          @include font(1.1rem, 300);
+          display: block;
+          margin-top: .5rem;
+        }
+        tr:hover {
+          background-color: $tableHover;
+        }
+      }
     }
-    td,
-    th {
-      padding: 3px;
-      // width: 30px;
-      height: 4rem;
-    }
-    th {
-      @include font(1rem, 300);
-    }
-    // .even {
-    //   background: #fbf8f0;
-    // }
-    // .odd {
-    //   background: #fefcf9;
-    // }
   }
 }
+

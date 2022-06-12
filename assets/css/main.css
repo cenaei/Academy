@@ -98,6 +98,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 2rem;
+  width: 100vw;
 }
 
 .row {
@@ -108,6 +109,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.selected {
+  background-color: #cbbbff;
 }
 
 .left {
@@ -249,15 +254,9 @@ body {
   border-radius: 1.3rem;
 }
 
-.main .newCourses__slides {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 0px;
+.main .newCourses__slider {
+  width: 100%;
+  overflow: hidden;
 }
 
 .main .newCourses__slides img {
@@ -271,44 +270,224 @@ body {
   background-color: #FEF1E1;
 }
 
+.main .newCourses__slides--first figure, .main .newCourses__slides--second figure, .main .newCourses__slides--third figure {
+  background-color: #FDAB5F;
+  margin: 1.3rem;
+  border-radius: 1rem;
+}
+
 .main .newCourses__slides--second {
   background-color: #E9E3FD;
+}
+
+.main .newCourses__slides--second figure {
+  background-color: #8A6FD6;
+  margin: 1.3rem;
+  border-radius: 1rem;
 }
 
 .main .newCourses__slides--third {
   background-color: #E6F4FF;
 }
 
-.main .myCourses table {
-  min-width: 100%;
+.main .newCourses__slides--third figure {
+  background-color: #579BE4;
+  margin: 1.3rem;
+  border-radius: 1rem;
 }
 
-.main .myCourses table,
-.main .myCourses td,
-.main .myCourses th {
+.main .myCourses {
+  padding-top: 1rem;
+}
+
+.main .myCourses table {
+  padding: 1.5rem;
+  border-radius: 1.3rem;
+  min-width: 100%;
   background-color: aliceblue;
-  padding: 1rem;
+  border-spacing: 1rem;
+}
+
+.main .myCourses table td,
+.main .myCourses table th {
   border-radius: 1.3rem;
 }
 
-.main .myCourses td,
-.main .myCourses th {
-  padding: 3px;
-  height: 4rem;
+.main .myCourses table thead {
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
-.main .myCourses th {
-  font-size: 1rem;
+.main .myCourses table i {
+  text-align: center;
+  width: 2rem;
+  padding: 1rem;
+}
+
+.main .myCourses table tbody td:first-child {
+  width: 5rem;
+}
+
+.main .myCourses table tbody .web {
+  color: #E9E3FD;
+  background-color: #9E91C2;
+  text-align: center;
+  height: 3rem;
+}
+
+.main .myCourses table tbody .develop {
+  color: #78A5D2;
+  background-color: #E6F4FF;
+  text-align: center;
+  height: 3rem;
+}
+
+.main .myCourses table tbody .data {
+  color: #F0ADEB;
+  background-color: #FCE6FC;
+  text-align: center;
+  height: 3rem;
+}
+
+.main .myCourses table tbody .html {
+  color: #D1C9EE;
+  background-color: #E9E3FF;
+  text-align: center;
+  height: 3rem;
+}
+
+.main .myCourses table tbody .js {
+  color: #E5B687;
+  background-color: #FFF2E2;
+  text-align: center;
+  height: 3rem;
+}
+
+.main .myCourses table tbody span {
+  font-size: 1.1rem;
   font-weight: 300;
+  display: block;
+  margin-top: .5rem;
+}
+
+.main .myCourses table tbody tr:hover {
+  background-color: #ddefff;
 }
 
 .aside {
-  max-width: 20vw;
+  width: 30vw;
   min-height: 100%;
   padding: 2rem;
 }
 
-.aside .profile__detail img {
-  width: 20rem;
+.aside .profile__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside .profile__detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside .profile__detail figure {
+  margin: 0 auto;
+  max-width: 15rem;
+  background-color: #E9E3FD;
+  border-radius: 50%;
+}
+
+.aside .profile__detail figure img {
+  max-width: 15rem;
+  border-radius: 50%;
+}
+
+.aside .profile__detail i {
+  color: #8A6FD6;
+}
+
+.aside .profile__detail p {
+  margin-top: -1.3rem;
+  color: gray;
+}
+
+.aside .date {
+  margin: 1rem .5rem;
+}
+
+.aside .homework {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside .homework__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #E9E3FD;
+  border-radius: 1rem;
+  margin: .5rem 0;
+  padding: 1rem;
+}
+
+.aside .homework__item:hover {
+  cursor: pointer;
+  background-color: #8A6FD6;
+}
+
+.aside .homework__title {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.aside .homework__title span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: .5rem;
 }
 /*# sourceMappingURL=main.css.map */

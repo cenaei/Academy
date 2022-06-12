@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/vanillaCalendar.css" />
     <script
       src="https://kit.fontawesome.com/38a4aeacdd.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>Web Study Dashboard</title>
   </head>
   <body>
@@ -20,7 +25,7 @@
       </figure>
       <section class="menu">
         <ul>
-          <li>
+          <li class="selected">
             <a href="#"><i class="fa-solid fa-archway"></i> Dashboard</a>
           </li>
           <li>
@@ -70,75 +75,112 @@
       </navbar>
       <section class="newCourses">
         <h2>New Courses</h2>
-        <div class="newCourses__slides">
-          <div class="newCourses__slides--first">
-            <figure><img src="./assets/img/courses/1.png" alt="course logo" /></figure>
-            <h3>Geography</h3>
-            <p>12 lessons</p>
-          </div>
-          <div class="newCourses__slides--second">
-            <figure><img src="./assets/img/courses/2.png" alt="course logo" /></figure>
-            <h3>Geography</h3>
-            <p>12 lessons</p>
-          </div>
-          <div class="newCourses__slides--third">
-            <figure><img src="./assets/img/courses/3.png" alt="course logo" /></figure>
-            <h3>Geography</h3>
-            <p>12 lessons</p>
-          </div>
-          <div class="newCourses__slides--first">
-            <figure><img src="./assets/img/courses/1.png" alt="course logo" /></figure>
-            <h3>Geography</h3>
-            <p>12 lessons</p>
-          </div>
-          <div class="newCourses__slides--second">
-            <figure><img src="./assets/img/courses/2.png" alt="course logo" /></figure>
-            <h3>Geography</h3>
-            <p>12 lessons</p>
+        <div class="newCourses__slider">
+          <div class="newCourses__slides swiper-wrapper">
+            <div class="newCourses__slides--first swiper-slide">
+              <figure>
+                <img src="./assets/img/courses/1.png" alt="course logo" />
+              </figure>
+              <h3>Geography</h3>
+              <p>12 lessons</p>
+            </div>
+            <div class="newCourses__slides--second swiper-slide">
+              <figure>
+                <img src="./assets/img/courses/2.png" alt="course logo" />
+              </figure>
+              <h3>Geography</h3>
+              <p>12 lessons</p>
+            </div>
+            <div class="newCourses__slides--third swiper-slide">
+              <figure>
+                <img src="./assets/img/courses/3.png" alt="course logo" />
+              </figure>
+              <h3>Geography</h3>
+              <p>12 lessons</p>
+            </div>
+            <div class="newCourses__slides--first swiper-slide">
+              <figure>
+                <img src="./assets/img/courses/1.png" alt="course logo" />
+              </figure>
+              <h3>Geography</h3>
+              <p>12 lessons</p>
+            </div>
+            <div class="newCourses__slides--second swiper-slide">
+              <figure>
+                <img src="./assets/img/courses/2.png" alt="course logo" />
+              </figure>
+              <h3>Geography</h3>
+              <p>12 lessons</p>
+            </div>
+            <div class="newCourses__slides--third swiper-slide">
+              <figure>
+                <img src="./assets/img/courses/3.png" alt="course logo" />
+              </figure>
+              <h3>Geography</h3>
+              <p>12 lessons</p>
+            </div>
+            <div class="newCourses__slides--first swiper-slide">
+              <figure>
+                <img src="./assets/img/courses/1.png" alt="course logo" />
+              </figure>
+              <h3>Geography</h3>
+              <p>12 lessons</p>
+            </div>
+            <div class="newCourses__slides--second swiper-slide">
+              <figure>
+                <img src="./assets/img/courses/2.png" alt="course logo" />
+              </figure>
+              <h3>Geography</h3>
+              <p>12 lessons</p>
+            </div>
           </div>
         </div>
       </section>
       <section class="myCourses">
         <h2>My Courses</h2>
         <table>
-          <tbody>
-            <th>
+          <thead>
+            <tr>
               <td colspan="2">Course name</td>
               <td>Start</td>
               <td>Rate</td>
               <td>Level</td>
-            </th>
+            </tr>
+          </thead>
+          <tbody>
             <tr>
-              <td><i class="fa-brands fa-connectdevelop"></i></td>
-              <td>Web Design</td>
+              <td class="web"><i class="fa-brands fa-connectdevelop"></i></td>
+              <td>Web Design<span>12 lessons</span></td>
               <td>May 12</td>
               <td>4.8</td>
               <td>Elementary</td>
             </tr>
             <tr>
-              <td><i class="fa-brands fa-free-code-camp"></i></td>
-              <td>Development Basics</td>
+              <td class="develop">
+                <i class="fa-brands fa-free-code-camp"></i>
+              </td>
+              <td>Development Basics<span>13 lessons</span></td>
               <td>May 16</td>
               <td>4.4</td>
               <td>Intermediate</td>
             </tr>
             <tr>
-              <td><i class="fa-brands fa-python"></i></td>
-              <td>Data with Python</td>
+              <td class="data"><i class="fa-brands fa-python"></i></td>
+              <td>Data with Python<span>14 lessons</span></td>
               <td>May 17</td>
               <td>4.6</td>
               <td>Intermediate</td>
             </tr>
             <tr>
-              <td><i class="fa-brands fa-html5"></i></td>
-              <td>Html Basics</td>
+              <td class="html"><i class="fa-brands fa-html5"></i></td>
+              <td>Html Basics<span>15 lessons</span></td>
               <td>May 26</td>
               <td>4.7</td>
               <td>Elementary</td>
             </tr>
             <tr>
-              <td><i class="fa-brands fa-js-square"></i></td>
-              <td>JavaScript</td>
+              <td class="js"><i class="fa-brands fa-js-square"></i></td>
+              <td>JavaScript<span>16 lessons</span></td>
               <td>May 30</td>
               <td>4.9</td>
               <td>Elementary</td>
@@ -161,18 +203,113 @@
             />
           </figure>
           <div class="profile__name">
-            <h3>Esther Howard</h3>
+            <h3>Esther Howard <i class="fa-solid fa-certificate"></i></h3>
           </div>
           <div class="profile__level">
             <p>Elementary</p>
           </div>
         </div>
       </section>
-      <section class="date"></section>
+      <section class="date">
+        <div class="date__picker__total">
+          <div id="v-cal">
+            <div class="vcal-header">
+              <button class="vcal-btn" data-calendar-toggle="previous">
+                <svg
+                  height="24"
+                  version="1.1"
+                  viewbox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+                  ></path>
+                </svg>
+              </button>
+
+              <div class="vcal-header__label" data-calendar-label="month">
+                March 2017
+              </div>
+
+              <button class="vcal-btn" data-calendar-toggle="next">
+                <svg
+                  height="24"
+                  version="1.1"
+                  viewbox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="vcal-week">
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thu</span>
+              <span>Fri</span>
+              <span>Sat</span>
+              <span>Sun</span>
+            </div>
+            <div class="vcal-body" data-calendar-area="month"></div>
+          </div>
+          <p class="demo-picked">
+            Date picked:
+            <span data-calendar-label="picked"></span>
+          </p>
+        </div>
+      </section>
       <section class="homework">
         <h2>Homework progress</h2>
-        <div class="homework__slides"></div>
+        <div class="homework__slides">
+          <div class="homework__item">
+            <figure></figure>
+            <div class="homework__title">
+              Styling with CSS<span>14 tasks</span>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div class="homework__item">
+            <figure></figure>
+            <div class="homework__title">
+              Basics of programming<span>15 tasks</span>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div class="homework__item">
+            <figure></figure>
+            <div class="homework__title">
+              Learn to Program in JS<span>16 tasks</span>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
       </section>
     </aside>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".newCourses__slider", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        grabCursor: true,
+        mousewheel: true,
+        keyboard: {
+          enabled: true,
+        },
+      });
+    </script>
+    <script src="vanillaCalendar.js" type="text/javascript"></script>
+    <script>
+      window.addEventListener("load", function () {
+        vanillaCalendar.init();
+      });
+    </script>
   </body>
 </html>

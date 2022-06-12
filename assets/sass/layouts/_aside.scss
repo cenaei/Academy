@@ -1,19 +1,64 @@
 .aside {
-  max-width: 20vw;
+  width: 30vw;
   min-height: 100%;
   padding: 2rem;
   .profile {
     &__title {
-      
+      @include flexBetween(row);
     }
     &__detail {
-      img {width: 20rem}
+      @include flexCenter(column);
+      figure {
+        margin: 0 auto;
+        max-width: 15rem;
+        background-color: $lPurple;
+        border-radius: 50%;
+        img {
+          max-width: 15rem;
+          border-radius: 50%;
+        }
+      }
+      i {
+        color: $purple;
+      }
+      p {
+        margin-top: -1.3rem;
+        color: $gray;
+      }
     }
     &__name {
 
     }
     &__level {
 
+    }
+  }
+
+  .date {
+    margin: 1rem .5rem;
+  }
+
+  .homework {
+    @include flexCenter(column);
+    &__item {
+      @include flexBetween(row);
+      width: 100%;
+      background-color: $secondary;
+      border-radius: 1rem;
+      margin: .5rem 0;
+      padding: 1rem;
+      &:hover {
+        cursor: pointer;
+        background-color: $purple;
+      }
+    }
+    &__title {
+      @include font(1.4rem, 300);
+      span {
+        display: block;
+        @include font(1.2rem, 300);
+        margin: .5rem;
+      }
     }
   }
 }
