@@ -1,6 +1,7 @@
 .aside {
-  width: 30vw;
-  min-height: 100%;
+  overflow: scroll;
+  // width: 30vw;
+  // min-height: 100%;
   padding: 2rem;
   .profile {
     &__title {

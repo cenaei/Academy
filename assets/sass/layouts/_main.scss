@@ -1,6 +1,6 @@
 .main {
-  min-height: 100%;
-  min-width: 65vw;
+  // min-height: 100%;
+  // min-width: 65vw;
   padding: 2rem;
   .nav {
     @include flexBetween(row);
@@ -11,8 +11,9 @@
     }
   }
   .newCourses {
+    max-width: 60vw;
     &__slider {
-      width: 100%;
+      // width: 100%;
       overflow: hidden;
     }
     &__slides {
@@ -125,9 +126,9 @@
           display: block;
           margin-top: .5rem;
         }
-        tr:hover {
-          background-color: $tableHover;
-        }
+        // tr:hover {
+        //   background-color: $tableHover;
+        // }
       }
     }
   }
