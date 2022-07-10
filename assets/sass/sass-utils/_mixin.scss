@@ -81,3 +81,22 @@
   max-width: $width;
   margin: 0 auto;
 }
+
+@mixin grid3($a, $b, $c) {
+  display: grid;
+  grid-template-columns: $a $b $c;
+  grid-template-rows: 1fr;
+  overflow: auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0px;
+  display: grid;
+}
+
+@mixin grid($min: 35rem) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($min, 1fr));
+  grid-template-rows: 1fr;
+  overflow: auto;
+  grid-column-gap: 10rem;
+  grid-row-gap: 0px;
+}
