@@ -115,6 +115,10 @@ body {
   background-color: #cbbbff;
 }
 
+.hidden {
+  display: none;
+}
+
 .left figure {
   display: -webkit-box;
   display: -ms-flexbox;

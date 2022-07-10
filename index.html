@@ -25,22 +25,26 @@
       </figure>
       <section class="menu">
         <ul>
-          <li class="selected">
+          <li
+            class="tab-menu selected"
+            onclick="openTab(this.id)"
+            id="dashboard"
+          >
             <a href="#"><i class="fa-solid fa-archway"></i> Dashboard</a>
           </li>
-          <li>
+          <li class="tab-menu" onclick="openTab(this.id)" id="courses">
             <a href="#"><i class="fa-solid fa-briefcase"></i> Courses</a>
           </li>
-          <li>
+          <li class="tab-menu" onclick="openTab(this.id)" id="chats">
             <a href="#"><i class="fa-solid fa-comment"></i> Chats</a>
           </li>
-          <li>
+          <li class="tab-menu" onclick="openTab(this.id)" id="grades">
             <a href="#"><i class="fa-solid fa-chart-simple"></i> Grades</a>
           </li>
-          <li>
+          <li class="tab-menu" onclick="openTab(this.id)" id="schedule">
             <a href="#"><i class="fa-solid fa-calendar-days"></i> Schedule</a>
           </li>
-          <li>
+          <li class="tab-menu" onclick="openTab(this.id)" id="settings">
             <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
           </li>
         </ul>
@@ -73,7 +77,7 @@
             <i class="fa-solid fa-sun"></i>
           </button> -->
       </navbar>
-      <section class="newCourses">
+      <section id="dashboardTab" class="tabs newCourses">
         <h2>New Courses</h2>
         <div class="newCourses__slider">
           <div class="newCourses__slides swiper-wrapper">
@@ -136,7 +140,7 @@
           </div>
         </div>
       </section>
-      <section class="myCourses">
+      <section id="dashboardTab" class="tabs myCourses">
         <h2>My Courses</h2>
         <table>
           <thead>
@@ -188,6 +192,62 @@
           </tbody>
         </table>
       </section>
+      <section id="coursesTab" class="tabs myCourses">
+        <h2>My Courses</h2>
+        <table>
+          <thead>
+            <tr>
+              <td colspan="2">Course name</td>
+              <td>Start</td>
+              <td>Rate</td>
+              <td>Level</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="web"><i class="fa-brands fa-connectdevelop"></i></td>
+              <td>Web Design<span>12 lessons</span></td>
+              <td>May 12</td>
+              <td>4.8</td>
+              <td>Elementary</td>
+            </tr>
+            <tr>
+              <td class="develop">
+                <i class="fa-brands fa-free-code-camp"></i>
+              </td>
+              <td>Development Basics<span>13 lessons</span></td>
+              <td>May 16</td>
+              <td>4.4</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td class="data"><i class="fa-brands fa-python"></i></td>
+              <td>Data with Python<span>14 lessons</span></td>
+              <td>May 17</td>
+              <td>4.6</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td class="html"><i class="fa-brands fa-html5"></i></td>
+              <td>Html Basics<span>15 lessons</span></td>
+              <td>May 26</td>
+              <td>4.7</td>
+              <td>Elementary</td>
+            </tr>
+            <tr>
+              <td class="js"><i class="fa-brands fa-js-square"></i></td>
+              <td>JavaScript<span>16 lessons</span></td>
+              <td>May 30</td>
+              <td>4.9</td>
+              <td>Elementary</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="chatsTab" class="tabs chat hidden">Chats</section>
+      <section id="gradesTab" class="tabs grades hidden">Grades</section>
+      <section id="scheduleTab" class="tabs schedule hidden">Schedule</section>
+      <section id="settingsTab" class="tabs settings hidden">Settings</section>
     </main>
     <aside class="aside">
       <section class="profile">
@@ -311,5 +371,6 @@
         },
       });
     </script>
+    <script src="./app.js"></script>
   </body>
 </html>
