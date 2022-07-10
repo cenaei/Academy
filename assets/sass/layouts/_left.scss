@@ -11,12 +11,12 @@
       border-radius: 1rem;
     }
   }
-  
+
   .menu {
-    padding-left: .5rem;
+    padding-left: 0.5rem;
 
     ul {
-      li{
+      li {
         @include flexStartRow;
         // @include font(2rem, 600);
         // Not Working
@@ -40,12 +40,12 @@
     @include flexCenter(column);
     text-align: center;
     figure {
+      z-index: 5;
       img {
         width: 20rem;
       }
     }
     &__text {
-      z-index: -1;
       padding: 7rem 1rem 2rem;
       margin-top: -12rem;
       background-color: $secondary;
@@ -59,8 +59,11 @@
       button {
         @include font(1.2rem, 400);
         margin-top: 2rem;
-        // &:hover {background-color: red;}
-        // Not Working
+        transition: transform 300ms ease-in-out; 
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+        }
       }
     }
   }

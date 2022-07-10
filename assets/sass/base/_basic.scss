@@ -24,5 +24,5 @@ body {
 .chat, .grades, .schedule, .settings {
   width: 100%;
   height: 100%;
-  @include flexCenter;
+  // @include flexCenter(column);
 }
