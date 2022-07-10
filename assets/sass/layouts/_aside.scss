@@ -48,9 +48,11 @@
       border-radius: 1rem;
       margin: .5rem 1rem;
       padding: 1rem;
+      transition: transform 300ms ease-in-out;
       &:hover {
         cursor: pointer;
         background-color: $purple;
+        transform: translateX(1rem);
       }
     }
     &__title {

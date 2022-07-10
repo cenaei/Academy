@@ -557,11 +557,17 @@ body {
   border-radius: 1rem;
   margin: .5rem 1rem;
   padding: 1rem;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .aside .homework__item:hover {
   cursor: pointer;
   background-color: #8A6FD6;
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
 }
 
 .aside .homework__title {
