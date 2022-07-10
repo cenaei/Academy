@@ -290,12 +290,21 @@ body {
   text-align: center;
   border-radius: 1rem;
   background-color: #FEF1E1;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
 .main .newCourses__slides--first figure, .main .newCourses__slides--second figure, .main .newCourses__slides--third figure {
   background-color: #FDAB5F;
   margin: 1.3rem;
   border-radius: 1rem;
+}
+
+.main .newCourses__slides--first:hover, .main .newCourses__slides--second:hover, .main .newCourses__slides--third:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .main .newCourses__slides--second {
