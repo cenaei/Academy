@@ -1,0 +1,13 @@
+﻿# Agent skills and workspace configs
+.agents/
+AGENTS.md
+agent.md
+
+# Local feature specs and issue tracker scratchpad
+.scratch/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
